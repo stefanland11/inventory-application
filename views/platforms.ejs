@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Platforms</title>
+  </head>
+  <body>
+    <%- include('navbar', {links: links}) %>
+    <h1>Platforms</h1>
+    <ul>
+      <% for (let i = 0; i < platLinks.length; i++) { %>
+      <li>
+        <a href="<%= platLinks[i].href %>">
+          <span> <%= platLinks[i].text %> </span>
+        </a>
+      </li>
+      <% } %>
+    </ul>
+  </body>
+</html>

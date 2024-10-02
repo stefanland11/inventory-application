@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Search by <%=filter%></title>
+  </head>
+  <body>
+    <%- include('navbar', {links: links}) %>
+    <h1><%= filter %></h1>
+    <ul>
+      <% results.map((r) => { %>
+      <li><%= r[name] %></li>
+      <% console.log(r[name]) %>
+      <% }) %>
+    </ul>
+  </body>
+</html>

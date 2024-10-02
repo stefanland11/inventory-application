@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Developers</title>
+  </head>
+  <body>
+    <%- include('navbar', {links: links}) %>
+    <h1>Developers</h1>
+    <ul>
+      <% for (let i = 0; i < devLinks.length; i++) { %>
+      <li>
+        <a href="<%= devLinks[i].href %>">
+          <span> <%= devLinks[i].text %> </span>
+        </a>
+      </li>
+      <% } %>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Genres</title>
+  </head>
+  <body>
+    <%- include('navbar', {links: links}) %>
+    <h1>Genres</h1>
+    <ul>
+      <% for (let i = 0; i < genreLinks.length; i++) { %>
+      <li>
+        <a href="<%= genreLinks[i].href %>">
+          <span> <%= genreLinks[i].text %> </span>
+        </a>
+      </li>
+      <% } %>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<nav>
+  <ul>
+    <% for (let i = 0; i < links.length; i++) { %>
+    <li>
+      <a href="<%= links[i].href %>">
+        <span> <%= links[i].text %> </span>
+      </a>
+    </li>
+    <% } %>
+  </ul>
+  <form method="GET" action="/search">
+    <label for="filters">Search by:</label>
+    <select id="filters" name="filter" placeholder="Game">
+      <option value="Game">Game</option>
+      <option value="Genre">Genre</option>
+      <option value="Developer">Developer</option>
+      <option value="Platform">Platform</option>
+    </select>
+    <input type="text" name="search" id="search">
+    <button type="submit">Submit</button>
+  </form>
+</nav>

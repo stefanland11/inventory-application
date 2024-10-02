@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title><%= genre %></title>
+  </head>
+  <body>
+    <%- include('navbar', {links: links}) %>
+    <h1><%= genre %></h1>
+    <ul>
+      <% games.map((game) => { %>
+      <li><%= game.title %></li>
+      <% }) %>
+    </ul>
+  </body>
+</html>

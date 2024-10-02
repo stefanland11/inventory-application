@@ -1,0 +1,15 @@
+<!-- index.ejs -->
+<html>
+  <head>
+    <title>Homepage</title>
+  </head>
+  <body>
+    <%- include('navbar', {links: links}) %>
+    <h1>Game Library</h1>
+    <ul>
+      <% games.map((game) => { %>
+      <li><%= game.title %></li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
